@@ -1,42 +1,42 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/*  T A I L W I N D   C S S  */
+@import "tailwindcss";
+
+@theme {
+    --color-primary-dark: #1d1d1b;
+    --color-primary-bg: #cdc6be;
+    --color-primary-orange: #c03f13;
+    --color-primary-half-drak: #1d1d1b80
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
+/*  P U R E   C S S  */
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: var(--font-editorial-light);
+    overflow-x: hidden !important;
+    transition: 1.8s;
+    background-color: #cdc6be !important;
+    color: #1d1d1b;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.editorial-bold { font-family: var(--font-editorial-bold); }
+
+.creator { font-family: var(--font-editorial-light);}
+
+.bg-paper {
+    background: url('../../public/image/paper-bg.jpg');
+    z-index: 55;
+    opacity: .3;
+    background-position: 50%;
+    background-size: auto;
+    position: absolute;
+    inset: 0;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    will-change: transform;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+.wrapper { padding: 4vh 2vw;}
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.test {
+    color: #1d1d1b80;
 }
