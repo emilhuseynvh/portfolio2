@@ -4,10 +4,10 @@ import WorkCard from '../ui/WorkCard';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
-let work = workData;
-let half = Math.ceil(work.length / 2);
-let firstHalf = work.slice(0, half);
-let secondHalf = work.slice(half);
+const work = workData;
+const half = Math.ceil(work.length / 2);
+const firstHalf = work.slice(0, half);
+const secondHalf = work.slice(half);
 
 const WorkSlider: React.FC = () => {
     const initialSlide = firstHalf.length;

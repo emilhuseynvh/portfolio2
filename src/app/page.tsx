@@ -5,7 +5,7 @@ import WorkSlider from '@/components/Home/WorkSlider';
 import React, { useEffect, useState } from 'react';
 
 
-const page: React.FC = () => {
+const Page: React.FC = () => {
   const [padding, setPadding] = useState<number>(70);
   const [rotate, setRotate] = useState<boolean>(false);
 
@@ -35,4 +35,4 @@ const page: React.FC = () => {
   );
 };
 
-export default page;
+export default Page;
