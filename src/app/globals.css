@@ -20,6 +20,10 @@ body {
 
 .editorial-bold { font-family: var(--font-editorial-bold); }
 
+.h1{
+    padding: 4.5vw 1vw 1vw;
+}
+
 .creator { font-family: var(--font-editorial-light);}
 
 .bg-paper {
