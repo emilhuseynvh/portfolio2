@@ -18,11 +18,25 @@ body {
     color: #1d1d1b;
 }
 
+.has-cropcat::first-letter {
+    color: #cdc6be;
+    background-color: #1d1d1b;
+    font-size: 2.25vw;
+    line-height: 2.7vw;
+    text-align: end;
+    padding: 1vw .4vw 1vw .5vw;
+    margin: .7vw 1vw 0vw 0vw;
+    font-family: var(--font-canopee) !important;
+    font-feature-settings: "ss03";
+    float: left;
+    font-size: 80px;
+}
+
 .editorial-bold { font-family: var(--font-editorial-bold); }
 
-.h1{
-    padding: 4.5vw 1vw 1vw;
-}
+.canopee { font-family: var(--font-canopee); }
+
+.h1{ padding: 4.5vw 1vw 1vw; }
 
 .creator { font-family: var(--font-editorial-light);}
 

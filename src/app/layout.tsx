@@ -13,6 +13,11 @@ const editorial = localFont({
   variable: '--font-editorial-bold',
   display: 'swap',
 });
+const canopee = localFont({
+  src: '../../public/font/Canopee/Canopee Regular.otf',
+  variable: '--font-canopee',
+  display: 'swap',
+});
 
 
 
@@ -28,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${editorialBold.variable} ${editorial.variable}`}>
+      <body className={`${editorialBold.variable} ${canopee.variable} ${editorial.variable}`}>
         {children}
       </body>
     </html>
